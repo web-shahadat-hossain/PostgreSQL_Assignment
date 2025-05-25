@@ -93,5 +93,10 @@ SELECT sighting_id, get_the_time_of_day(sighting_time)  AS time_of_day  FROM sig
 
 
 
+-- ===============================================
+-- Problem 9️⃣: 
+-- Description: Delete rangers who have never sighted any species
+-- =============================================== 
+DELETE FROM rangers WHERE ranger_id NOT IN(SELECT ranger_id FROM sightings)
 
  
