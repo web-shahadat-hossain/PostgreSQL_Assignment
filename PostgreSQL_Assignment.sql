@@ -70,6 +70,26 @@ SELECT * FROM sightings ORDER BY sighting_time DESC LIMIT 2;
 -- =============================================== 
 UPDATE  species set conservation_status ='Historic' WHERE extract(YEAR FROM discovery_date::Date) < 1800;
 
+-- ===============================================
+-- Problem 8️⃣: 
+-- Description: Label each sighting's time of day as 'Morning', 'Afternoon', or 'Evening'.
+-- =============================================== 
+CREATE OR REPLACE FUNCTION get_the_time_of_day(p_time TIMESTAMP)
+RETURNS TEXT
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF EXTRACT(HOUR FROM p_time) < 12 THEN
+        RETURN 'Morning';
+    ELSIF EXTRACT(HOUR FROM p_time) BETWEEN 12 AND 17 THEN
+        RETURN 'Afternoon';
+    ELSE
+        RETURN 'Evening';
+    END IF;
+END;
+$$;
+
+SELECT sighting_id, get_the_time_of_day(sighting_time)  AS time_of_day  FROM sightings;
 
 
 
