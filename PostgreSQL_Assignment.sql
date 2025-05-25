@@ -65,6 +65,13 @@ SELECT *  FROM species WHERE species_id NOT IN (SELECT species_id FROM sightings
 SELECT * FROM sightings ORDER BY sighting_time DESC LIMIT 2;
 
 
+-- ===============================================
+-- Problem 7️⃣: 
+-- Description:  Update all species discovered before year 1800 to have status 'Historic'.
+-- =============================================== 
+UPDATE  species set conservation_status ='Historic' WHERE extract(YEAR FROM discovery_date::Date) < 1800;
+
+
 
 
 
