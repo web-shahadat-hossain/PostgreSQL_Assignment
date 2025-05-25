@@ -50,7 +50,7 @@ SELECT r.name, count(s.ranger_id) as total_sightings  FROM sightings as s  JOIN 
 -- ===============================================
 -- Problem 5️⃣
 -- =============================================== 
-SELECT *  FROM species WHERE species_id NOT IN (SELECT species_id FROM sightings);
+SELECT common_name  FROM species WHERE species_id NOT IN (SELECT species_id FROM sightings);
 
 -- ===============================================
 -- Problem 6️⃣
@@ -88,6 +88,9 @@ SELECT sighting_id, get_the_time_of_day(sighting_time)  AS time_of_day  FROM sig
 -- ===============================================
 -- Problem 9️⃣
 -- =============================================== 
-DELETE FROM rangers WHERE ranger_id NOT IN(SELECT ranger_id FROM sightings)
+DELETE FROM rangers WHERE ranger_id NOT IN(SELECT ranger_id FROM sightings);
+
+
+
 
  

@@ -14,7 +14,7 @@
 
 ✅ Extensible – নতুন FUNCTION, টাইপ, স্টোরড Procedural যোগ করা যায়।
 
-## 📌 PostgreSQL: ডাটাবেসের প্রধান কম্পোনেন্টস
+## PostgreSQL: ডাটাবেসের প্রধান কম্পোনেন্টস
 
 1️⃣ Database (ডাটাবেস)
 👉 এটি হলো এক বা একাধিক টেবিলের সমষ্টি যেখানে ডাটা সংরক্ষণ করা হয়। 👉 প্রতিটি PostgreSQL সার্ভারে একাধিক ডাটাবেস থাকতে পারে।
@@ -44,7 +44,7 @@ PostgreSQL একটি শক্তিশালী, ফিচার-সমৃ�
 <!-- Explain the GROUP BY clause and its role in aggregation operations. -->
 <!-- ================================== -->
 
-# 🔹Explain the GROUP BY clause and its role in aggregation operations.
+# 📌 Explain the GROUP BY clause and its role in aggregation operations.
 
 Group By হলো এমন একটা পদ্ধতি, যার মাধ্যমে আমরা ডেটাগুলোকে একটা নির্দিষ্ট শর্ত অনুযায়ী ভাগ করতে পারি। সহজভাবে বললে, এটা একই ধরনের তথ্যগুলোকে এক জায়গায় জড়ো করে।
 
@@ -74,7 +74,7 @@ Group By এবং Aggregation Methods ব্যবহারের মাধ্�
 <!-- Explain the Primary Key and Foreign Key concepts in PostgreSQL. -->
 <!-- ================================== -->
 
-# 🔹Explain the Primary Key and Foreign Key concepts in PostgreSQL.
+# 📌 Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
 ## Primary Key
 
@@ -114,7 +114,7 @@ CREATE TABLE post(
 <!-- What is the difference between the VARCHAR and CHAR data types?-->
 <!-- ================================== -->
 
-# What is the difference between the VARCHAR and CHAR data types?
+# 📌 What is the difference between the VARCHAR and CHAR data types?
 
 ### CHAR:
 
@@ -132,7 +132,7 @@ CREATE TABLE post(
 <!-- What is the significance of the JOIN operation, and how does it work in PostgreSQL? -->
 <!-- ================================== -->
 
-# What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+# 📌 What is the significance of the JOIN operation, and how does it work in PostgreSQL?
 
 ## JOIN অপারেশন কী ও কেন ব্যবহার হয়?
 
