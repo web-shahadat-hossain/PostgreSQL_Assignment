@@ -14,7 +14,7 @@ CREATE TABLE species (
     discovery_date DATE NOT NULL,
     conservation_status VARCHAR(100) NOT NULL
 );
-CREATE TABLE species (
+CREATE TABLE sightings (
     sighting_id SERIAL PRIMARY KEY,
     ranger_id INT NOT NULL REFERENCES rangers(ranger_id),
     species_id INT NOT NULL REFERENCES species(species_id),
@@ -24,3 +24,20 @@ CREATE TABLE species (
 );
 
 
+-- ===============================================
+-- Problem 1: 
+-- Description: Register a new ranger with provided data with name = 'Derek Fox' and region = 'Coastal Plains
+-- ===============================================
+INSERT INTO rangers (name, region) VALUES
+('Derek Fox', 'Coastal Plains');
+
+-- ===============================================
+-- Problem 1: 
+-- Description: Register a new ranger with provided data with name = 'Derek Fox' and region = 'Coastal Plains
+-- ===============================================
+
+
+
+
+
+ 
