@@ -1,4 +1,3 @@
--- Active: 1716272212372@@127.0.0.1@5432@postgres
 -------------- Create a database --------------
 CREATE DATABASE conservation_db;
 
