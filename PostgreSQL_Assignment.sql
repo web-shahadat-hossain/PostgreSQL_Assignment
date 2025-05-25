@@ -43,8 +43,7 @@ SELECT count(*) as unique_species_count FROM (SELECT species_id FROM sightings G
 -- Problem 3️⃣: 
 -- Description:  Find all sightings where the location includes "Pass".
 -- =============================================== 
-
-SELECT * FROM sightings;
+SELECT * FROM sightings WHERE location ILIKE '%Pass%';
 
 
 
